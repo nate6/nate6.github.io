@@ -3,15 +3,12 @@
 <body>
     <h1>Test</h1>
     <p>Will be website eventually ugh</p>
-    <script src="http://www.java.com/js/deployJava.js"></script>
-    <script>
-        var attributes = {
-            code:'pokemon/Run.class',
-        width:640, height:450} ;
-        var parameters = {}; // does the Applet take parameters?
-        var version = '1.6' ; // does the Applet require a minimum version of Java
-        deployJava.runApplet(attributes, parameters, version);
-    </script>
+    <applet
+        codebase="https://nate6.github.io/pokemon2.jar"
+        archive="pokemon2.jar"
+        code="pokemon/Run.class"
+        width=640 height=450>
+    </applet>
 
 </body>
 </html>
