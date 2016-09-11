@@ -3,16 +3,12 @@
 <body>
     <h1>Test</h1>
     <p>game hopefully:</p>
-    <script src="https://www.java.com/js/deployJava.js"></script>
-    <script>
-        var attributes = {codebase: 'https://github.com/nate6/nate6.github.io/tree/gh-pages',
-                          code: 'pokemon.Game.class',
-                          archive: 'pokemon.jar',
-                          width: '635', 
-                          height: '422'};
-        var parameters = {}; // customize per your needs
-        var version = '1.8'; // JDK version
-        deployJava.runApplet(attributes, parameters, version);
-    </script>
+    <embed 
+        codebase= 'https://github.com/nate6/nate6.github.io/tree/gh-pages',
+        code= 'pokemon.Game.class',
+        archive= 'pokemon.jar',
+        width="200" height="200"
+        type="application/x-java-applet;version=1.5.0"
+        pluginspage="http://java.sun.com/j2se/1.5.0/download.html" />
 </body>
 </html>
