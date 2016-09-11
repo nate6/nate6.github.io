@@ -2,14 +2,18 @@
 <html>
 <body>
     <h1>Test</h1>
-    <p>game testrun5:</p>
-    <embed
-        id="pokemon"
-        type="application/x-java-applet;version=1.6"
-        width="999" height="999"
-        archive="pokemon2.jar"
-        code="github.com/nate6/nate6.github.io/blob/gh-pages/pokemon2/pokemon/Game.class"
-        pluginspage="http://java.com/download/"
-        myParam="" />
+    <p>game testrun:</p>
+    <script src="applet_fu.js"></script>
+    <script
+        applet_fu.run(
+          {'width':'550','height':'320'},
+          {
+            'archive':'pokemon2.jar',
+            'code':'pokemon/Game.class'
+          },
+          '1.8',
+          ''
+        );
+    </script>
 </body>
 </html>
