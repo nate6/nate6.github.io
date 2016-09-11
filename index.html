@@ -3,11 +3,16 @@
 <body>
     <h1>Test</h1>
     <p>game test br:</p>
-    <applet 
-        code="pokemon.Game" 
-        archive="pokemon2.jar"
-        width="635" 
-        height="422"
-    </applet>
+    <script src="//www.java.com/js/deployJava.js"></script>
+    <script>
+        var attributes = {codebase: 'https://github.com/nate6/nate6.github.io/tree/master',
+                          code: 'pokemon.Game.class',
+                          archive: 'pokemon2.jar',
+                          width: '635', 
+                          height: '422'};
+        var parameters = {java_arguments: '-Xmx256m'}; // customize per your needs
+        var version = '1.8'; // JDK version
+        deployJava.runApplet(attributes, parameters, version);
+    </script>
 </body>
 </html>
